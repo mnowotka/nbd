@@ -1,4 +1,4 @@
-object Main {
+object Task1 extends App {
 
   def generatePolishWeekDayNames(): String = {
     val polishWeekDays = List("Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela")
@@ -27,8 +27,24 @@ object Main {
     result
   }
 
-  def main(args: Array[String]) {
-    println(generatePolishWeekDayNames())
-    println(generatePolishWeekDayNamesStartingWithLetterP())
+  def generatePolishWeekDayNamesUsingWhileLoop(): String = {
+    val polishWeekDays = List("Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela")
+    val delimiter = ","
+    var result: String = ""
+    var i = 0
+    val length = polishWeekDays.size
+    while(i < length){
+      result += polishWeekDays(i)
+      if (i != length - 1) {
+        result += delimiter
+      }
+      i += 1
+    }
+    result
   }
+
+  println(generatePolishWeekDayNames())
+  println(generatePolishWeekDayNamesStartingWithLetterP())
+  println(generatePolishWeekDayNamesUsingWhileLoop())
+
 }
