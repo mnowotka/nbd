@@ -1,0 +1,13 @@
+HTTP/1.1 201 Created
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvo/tvVgCEUpkzGNlWHLW7BZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s23455/keys/YqCNIyUvsCdjhgBwulHLGJ0LYRs
+Link: </buckets/s23455>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 17:53:40 GMT
+ETag: "7kPhQI8t6AgJmwLxh1hJG2"
+Date: Thu, 10 Jun 2021 17:53:40 GMT
+Content-Type: application/json
+Content-Length: 19
+
+{"one_field": true}

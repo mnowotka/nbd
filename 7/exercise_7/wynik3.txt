@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvo/t+9oMEUpkymNlWHHB7BZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23455>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 18:06:32 GMT
+ETag: "1Ey34WWLeMqPF2JxVWQ6qy"
+Date: Thu, 10 Jun 2021 18:06:32 GMT
+Content-Type: application/json
+Content-Length: 121
+
+{"f1_string":"This is doc 1", "f2_number": 42, "f3_bool": true, "f4_null": null, "f5_extra_field": "I AM AN EXTRA FIELD"}

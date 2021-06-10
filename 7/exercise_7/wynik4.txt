@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvo/tF1gOEUpkymNlYL1odosvCwA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23455>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 18:08:05 GMT
+ETag: "6EBiGD84WOi3uyMOrJILpR"
+Date: Thu, 10 Jun 2021 18:08:05 GMT
+Content-Type: application/json
+Content-Length: 64
+
+{"f1_string":"This is doc 2", "f2_number": 41, "f3_bool": false}

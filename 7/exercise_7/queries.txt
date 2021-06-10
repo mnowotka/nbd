@@ -1,0 +1,27 @@
+1.
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 1", "f2_number": 42, "f3_bool": true, "f4_null": null}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc1\?returnbody\=true
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 2", "f2_number": 41, "f3_bool": false, "f4_array": ["Ala", "ma", "kota"]}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc2\?returnbody\=true
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 3", "f2_number": 40, "f3_bool": true, "f4_arrray": ["Ola", "ma", "psa"]}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc3\?returnbody\=true
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 4", "f2_number": 39, "f3_bool": false, "f4_array": ["Ela", "ma", "hipopotama"]}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc4\?returnbody\=true
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 5", "f2_number": 38, "f3_bool": true, "f4_array": []}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc5\?returnbody\=true
+
+2.
+   curl -i -v http://127.0.0.1:8098/buckets/s23455/keys/doc2
+3.
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 1", "f2_number": 42, "f3_bool": true, "f4_null": null, "f5_extra_field": "I AM AN EXTRA FIELD"}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc1\?returnbody\=true
+4.
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 2", "f2_number": 41, "f3_bool": false}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc2\?returnbody\=true
+5.
+   curl -i -v -XPUT -d '{"f1_string":"This is doc 3", "f2_number": 40, "f3_bool": true, "f4_arrray": ["Ola", "JUŻ NIE MA", "psa", "bo", "ma", "kota"]}' -H "Content-Type: application/json"  http://127.0.0.1:8098/buckets/s23455/keys/doc3\?returnbody\=true
+6.
+   curl -i -v -X DELETE http://127.0.0.1:8098/buckets/s23455/keys/doc4
+7.
+   curl -i -v http://127.0.0.1:8098/buckets/s23455/keys/doc4
+8.
+   curl -i -v -XPOST -d '{"one_field": true}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s23455/keys\?returnbody\=true >> wynik8.txt
+9.
+   curl -i http://localhost:8098/buckets/s23455/keys/\?keys\=true
+   curl -i -v http://127.0.0.1:8098/buckets/s23455/keys/YqCNIyUvsCdjhgBwulHLGJ0LYRs
+10.
+   curl -i http://localhost:8098/buckets/s23455/keys/\?keys\=true
+   curl -i -v -X DELETE http://127.0.0.1:8098/buckets/s23455/keys/YqCNIyUvsCdjhgBwulHLGJ0LYRs
